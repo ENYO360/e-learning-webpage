@@ -1,3 +1,31 @@
+:root {
+  --clr-neutral-100: #5B5B5B;
+  --clr-neutral-200: #ACACAC;
+  --clr-neutral-300: #000000;
+  --clr-neutral-400: #FFFFFF; 
+  --clr-neutral-500: #F48C06;
+  --clr-neutral-600: #010514d8;
+  --clr-neutral-700: #2F327D;
+  --clr-neutral-800: #00CBB8;
+  --clr-neutral-900: #696984;
+  --clr-neutral-1000: #49BBBD;
+  --clr-neutral-101: #00BCD4;
+  --clr-neutral-102: #B2B3CF;
+  --clr-neutral-103: #83839A;
+
+  --clr-primary-100: #49BBBD;
+  --clr-primary-200: #33EFA0;
+  --clr-primary-300: #23BDEE;
+  --clr-primary-400: #5B61EB;
+  --clr-primary-500: #E13468;
+  --clr-primary-600: #252641;
+  --clr-primary-700: #9DCCFF;
+  --clr-primary-800: #49BBBD;
+
+  --clr-accent-100: #49bbbdaa;
+  --clr-accent-200: #717FB0; 
+}
+
 .App {
   text-align: center;
 }
