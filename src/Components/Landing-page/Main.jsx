@@ -1,5 +1,8 @@
 import { SuccessData } from './SuccessData'
 import { CloudData } from './SuccessData'
+import WhatIsTOTC from './WhatIsTOTC'
+import OurFeatures from './OurFeatures'
+import ExplorCourses from './ExploreCourses'
 
 
 
@@ -48,7 +51,11 @@ export default function Main() {
                     </div>
                 </div>
                 <div className="main-section2">
-                    
+                    <WhatIsTOTC />
+                    <OurFeatures />
+                </div>
+                <div className='main-section3'>
+                    <ExplorCourses />
                 </div>
             </div>
         </>

@@ -17,7 +17,7 @@ export default function Hero() {
                 <div className="hero-section2">
                     <img src={Student1} alt="" />
                 </div>
-            </div> 
+            </div>
         </>
     )
 }
