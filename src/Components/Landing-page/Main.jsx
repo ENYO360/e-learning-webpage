@@ -3,6 +3,8 @@ import { CloudData } from './SuccessData'
 import WhatIsTOTC from './WhatIsTOTC'
 import OurFeatures from './OurFeatures'
 import ExplorCourses from './ExploreCourses'
+import LatestNews from './LatestNews'
+import Testimonial from './Testimonial'
 
 
 
@@ -56,6 +58,8 @@ export default function Main() {
                 </div>
                 <div className='main-section3'>
                     <ExplorCourses />
+                    <Testimonial />
+                    <LatestNews />
                 </div>
             </div>
         </>
