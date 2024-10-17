@@ -14,8 +14,8 @@ export default function Header() {
                         <li><a href='#'>About Us</a></li>
                     </ul>
                     <div className="nav-buttons">
-                        <button>Login</button>
-                        <button>Sign Up</button>
+                        <a href="#"><button className='login'>Login</button></a>
+                        <a href="#"><button className='sign-up'>Sign Up</button></a>
                     </div>
                 </div>
             </nav>

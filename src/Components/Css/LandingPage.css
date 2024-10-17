@@ -1,0 +1,122 @@
+/*Styling for the NavBar*/
+
+nav {
+    display: flex;
+    gap: 27%;
+    margin: 0% 5%;
+    padding-top: 1%;
+}
+
+nav img {
+    width: 80px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 60px;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: var(--clr-neutral-400);
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.nav-links ul li a:hover {
+    color: var(--clr-neutral-100);
+    transition: 300ms ease-in;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nav-buttons button {
+    width: 160px;
+    height: 60px;
+    border: none;
+    border-radius: 80vw;
+    font-size: 22px;
+}
+
+.login {
+    color: var(--clr-neutral-600);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login:hover {
+    border: 2px solid rgb(63, 62, 62);
+    cursor: pointer;
+    transition: 300ms ease-in;
+}
+
+.sign-up {
+    background-color: hsla(0, 0%, 100%, 0.279);
+    color: var(--clr-neutral-400);
+    font-weight: 600;
+}
+
+.sign-up:hover {
+    border: 2px solid rgb(63, 62, 62);
+    cursor: pointer;
+    transition: 300ms ease-in;
+}
+
+/*Styling for the HERO section*/
+
+.hero-section {
+    margin-inline: 5%;
+    display: flex;
+}
+
+.hero-section1 {
+    margin-top: 100px;
+}
+
+.yellow-text {
+    color: var(--clr-neutral-500);
+}
+
+.hero-section1 h2 {
+    color: var(--clr-neutral-400);
+    font-size: 54px;
+    font-weight: bold;
+}
+
+.hero-section1 p {
+    color: var(--clr-neutral-400);
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.hero-section1 div {
+    display: flex;
+}
+
+.join {
+    background-color: hsla(0, 0%, 100%, 0.279);
+    color: var(--clr-neutral-400);
+    font-weight: 600;
+    font-size: 24px;
+    width: 220px;
+    height: 80px;
+    border: none;
+    border-radius: 80vw;
+
+}
+
+.play-btn {
+    width: fit-content;
+}
