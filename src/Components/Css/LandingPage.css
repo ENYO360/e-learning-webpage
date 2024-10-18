@@ -1,5 +1,10 @@
 /*Styling for the NavBar*/
 
+.header-hero {
+    border-radius: 50% / 0 0 70px 70px;
+    overflow: hidden;
+}
+
 nav {
     display: flex;
     gap: 27%;
@@ -96,13 +101,14 @@ nav img {
     font-weight: bold;
 }
 
-.hero-section1 p {
+.white-p {
     color: var(--clr-neutral-400);
     font-family: "Nunito Sans", sans-serif;
 }
 
 .hero-section1 div {
     display: flex;
+    gap: 40px;
 }
 
 .join {
@@ -114,9 +120,231 @@ nav img {
     height: 80px;
     border: none;
     border-radius: 80vw;
+}
 
+.join:hover {
+    border: 2px solid rgb(63, 62, 62);
+    cursor: pointer;
+    transition: 300ms ease-in;
 }
 
 .play-btn {
-    width: fit-content;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.black-p {
+    color: var(--clr-neutral-300);
+    font-size: 24px;
+    font-weight: var(--fw-regular);
+}
+
+.hero-section2 img {
+    height: 100%;
+}
+
+/*Styling for the MAIN section*/
+
+.section-container {
+    margin-inline: 5%;
+}
+
+.main-section1-sub1 {
+    margin-block: 80px 50px;
+}
+
+.main-section1-sub1 h2 {
+    font-size: 48px;
+    font-weight: var(--fw-bold);
+    text-align: center;
+    padding-block: 10px;
+    margin: 0;
+    color: var(--clr-neutral-600);
+}
+
+.main-section1-sub1 p {
+    font-size: 18px;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.main-section1-sub2 {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.gradient-number {
+    font-size: 96px;
+    font-weight: 300;
+    background: linear-gradient(to right, #136CB5, #49BBBD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.normal-text {
+    font-size: 32px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.main-section1-sub3 {
+    margin-block: 80px;
+}
+
+.main-section1-sub3 h2 {
+    text-align: center;
+    font-weight: var(--fw-bold);
+    font-size: 36px;
+    color: var(--clr-neutral-700);
+    line-height: 180%;
+}
+
+.main-section1-sub3 h2 span {
+    color: var(--clr-neutral-800);
+}
+
+.main-section1-sub3 p {
+    width: 65%;
+    text-align: center;
+    margin-inline: auto;
+    line-height: 180%;
+    font-size: 24px;
+}
+
+.main-section1-sub4 {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.main-section1-sub4 div {
+    width: 450px;
+    display: grid;
+    border-radius: 20px;
+    box-shadow: 0px 10px 60px 0px #262d7615;
+}
+
+.main-section1-sub4 div img {
+    position: relative;
+    margin-inline: auto;
+    bottom: 40%;
+}
+
+.main-section1-sub4 div h3 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: var(--fw-medium);
+    color: var(--clr-neutral-700);
+    padding-inline: 50px;
+    margin-inline: auto;
+    line-height: auto;
+}
+
+.main-section1-sub4 div p {
+    font-size: 20px;
+    line-height: 180%;
+    padding-inline: 20px;
+    text-align: center;
+    color: var(--clr-neutral-900);
+}
+
+.main-section2 {
+    
+}
+
+.what-is-totc {
+    margin-block: 100px 50px;
+}
+
+.what {
+    font-size: 44px;
+    line-height: 180%;
+    font-weight: var(--fw-semiBold);
+    color: var(--clr-neutral-700);
+    margin: 0;
+    text-align: center;
+}
+
+.what span {
+    color: var(--clr-neutral-800);
+}
+
+.what-paragraph {
+    font-size: 24px;
+    line-height: 180%;
+    letter-spacing: 2%;
+    color: var(--clr-neutral-900);
+    width: 76%;
+    text-align: center;
+    margin-inline: auto;
+}
+
+.instructor-students {
+    display: flex;
+    gap: 80px;
+}
+
+.for-instructors, .for-students {
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.for-instructors {
+    background-image: url(../../Images/landing-page/for-instructor.png);
+}
+
+.for-students {
+    background-image: url(../../Images/landing-page/for-students.png);
+}
+
+.for-instructors div {
+    margin-inline: auto;
+    margin-top: 120px;
+    width: 300px;
+}
+
+.for-students div {
+    margin-inline: auto;
+    margin-top: 120px;
+    width: 300px;
+}
+
+.for-instructors h2, .for-students h2 {
+    font-size: 32px;
+    font-weight: var(--fw-semiBold);
+    text-align: center;
+    color: var(--clr-neutral-400);
+}
+
+.for-instructors button {
+    width: 283px;
+    height: 80px;
+    border-radius: 80vw;
+    font-size: 22px;
+    font-weight: var(--fw-medium);
+    border-color: var(--clr-neutral-400);
+    color: var(--clr-neutral-400);
+    background: transparent;
+}
+
+.for-students button {
+    width: 283px;
+    height: 80px;
+    border: none;
+    border-radius: 80vw;
+    font-size: 22px;
+    font-weight: var(--fw-medium);
+    background: var(--clr-primary-300);
+    opacity: 90%;
+    color: var(--clr-neutral-400);
 }

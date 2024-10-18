@@ -27,7 +27,7 @@ export default function ExplorCourses() {
                         <img src={ArrowForward} alt="forward arrow icon" />
                     </a>
                 </div>
-                <img src={CourseGroup1} alt="first course group" />
+                <img src={CourseGroup1} alt="first course group" width='400'/>
             </div>
             <div>
                 <div>
@@ -40,7 +40,7 @@ export default function ExplorCourses() {
                         <img src={ArrowForward} alt="forward arrow icon" />
                     </a>
                 </div>
-                <img src={CourseGroup2} alt="second course group" />
+                <img src={CourseGroup2} alt="second course group" width='400'/>
             </div>
             <div>
                 <div>
@@ -53,7 +53,7 @@ export default function ExplorCourses() {
                         <img src={ArrowForward} alt="forward arrow icon" />
                     </a>
                 </div>
-                <img src={CourseGroup3} alt="third course group" />
+                <img src={CourseGroup3} alt="third course group" width='400'/>
             </div>
         </>
     )

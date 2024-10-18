@@ -4,7 +4,7 @@
   --clr-neutral-300: #000000;
   --clr-neutral-400: #FFFFFF; 
   --clr-neutral-500: #F48C06;
-  --clr-neutral-600: #010514d8;
+  --clr-neutral-600: #010514;
   --clr-neutral-700: #2F327D;
   --clr-neutral-800: #00CBB8;
   --clr-neutral-900: #696984;
@@ -23,19 +23,28 @@
   --clr-primary-800: #49BBBD;
 
   --clr-accent-100: #49bbbdaa;
-  --clr-accent-200: #717FB0; 
+  --clr-accent-200: #717FB0;
+
+  /*Font Weight variables for font-family: POPPINS*/
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semiBold: 600;
+  --fw-bold: 700;
+  --fw-extraBold: 800
 }
 
 html {
   padding: 0;
   margin: 0;
+  height: 100%;
 }
 
 body {
   box-sizing: border-box;
-  margin-inline: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  height: 100%;
 }
 
 .header-hero {
