@@ -290,7 +290,8 @@ nav img {
 
 .instructor-students {
     display: flex;
-    gap: 80px;
+    gap: 60px;
+    margin-inline: 80px;
 }
 
 .for-instructors, .for-students {
@@ -347,4 +348,191 @@ nav img {
     background: var(--clr-primary-300);
     opacity: 90%;
     color: var(--clr-neutral-400);
+}
+
+.everything {
+    display: flex;
+    margin-block: 100px;
+    gap: 2px;
+}
+
+.everything-you-can h3 {
+    font-size: 36px;
+    font-weight: var(--fw-medium);
+    color: var(--clr-neutral-700);
+    line-height: 160%;
+    text-align: left;
+}
+
+.everything-you-can h3 span {
+    color: var(--clr-neutral-800);
+}
+
+.everything-you-can p {
+    font-size: 24px;
+    line-height: 180%;
+    letter-spacing: 2%;
+    color: var(--clr-neutral-900);
+}
+
+.everything-you-can a {
+    font-size: 22px;
+    color: var(--clr-neutral-900);
+}
+
+.our-features {
+    font-size: 36px;
+    color: var(--clr-neutral-700);
+    line-height: 180%;
+    text-align: center;
+}
+
+.our-features span {
+    color: var(--clr-neutral-800);
+}
+
+.our-features-pgh {
+    font-size: 24px;
+    color: var(--clr-neutral-900);
+    text-align: center;
+    line-height: 180%;
+}
+
+.our-features-group2 {
+    display: flex;
+    margin-top: 70px;
+}
+
+.a-user {
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.a-user h2 {
+    font-size: 40px;
+    line-height: 160%;
+    font-weight: var(--fw-semiBold);
+    color: var(--clr-neutral-700);
+}
+
+.a-user h2 span {
+    color: var(--clr-neutral-800);
+}
+
+.a-user ul {
+    font-size: 22px;
+    color: var(--clr-neutral-900);
+    list-style: none;
+    padding-left: 0;
+}
+
+.a-user ul li {
+    margin-bottom: 25px;
+    padding-left: 80px; /* Space for the image */
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.item1 {
+    background-image: url(../../Images/landing-page/grid-icon.png);
+}
+
+.item2 {
+    background-image: url(../../Images/landing-page/front-icon.png);
+}
+
+.item3 {
+    background-image: url(../../Images/landing-page/teachers&students.png);
+}
+
+.our-features-group3 {
+    display: flex;
+    position: relative;
+    bottom: 350px;
+}
+
+.tools {
+    margin-block: auto;
+}
+
+.our-features-group3 h2 {
+    font-size: 40px;
+    line-height: 160%;
+    font-weight: var(--fw-semiBold);
+    color: var(--clr-neutral-700);
+    width: 393px;
+    padding: 0;
+    margin: 0;
+}
+
+.our-features-group3 h2 span {
+    color: var(--clr-neutral-800);
+}
+
+
+.our-features-group3 p {
+    font-size: 22px;
+    line-height: 180%;
+    color: var(--clr-neutral-900);
+    letter-spacing: 2%;
+    width: 81%;
+    text-align: justify;
+}
+
+.our-features-group4 {
+    display: flex;
+    margin-top: -200px;
+}
+
+.assessments {
+    margin-left: auto;
+}
+
+.assessments h2 {
+    font-size: 40px;
+    line-height: 160%;
+    font-weight: var(--fw-semiBold);
+    color: var(--clr-neutral-700);
+    width: 347px;
+}
+
+.assessments h2 span {
+    color: var(--clr-neutral-800);
+}
+
+.assessments p {
+    font-size: 22px;
+    color: var(--clr-neutral-900);
+    line-height: 180%;
+    letter-spacing: 2%;
+    width: 550px;
+}
+
+.class-mgt {
+    display: flex;
+    margin-block: 80px;
+}
+
+.class-mgt h2 {
+    font-size: 40px;
+    line-height: 160%;
+    font-weight: var(--fw-semiBold);
+    color: var(--clr-neutral-700);
+    width: 420px;
+}
+
+.class-mgt h2 span {
+    color: var(--clr-neutral-800);
+}
+
+.class-mgt p {
+    font-size: 22px;
+    color: var(--clr-neutral-900);
+    line-height: 180%;
+    letter-spacing: 2%;
+    width: 600px;
+}
+
+.class-mgt-img {
+    margin-left: auto;
 }
