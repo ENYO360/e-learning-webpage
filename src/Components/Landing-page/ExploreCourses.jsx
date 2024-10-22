@@ -10,51 +10,53 @@ import CourseGroup3 from '../../Images/landing-page/course-group-3.png'
 
 export default function ExplorCourses() {
     return (
-        <>
-            <div>
-                <h2>Explore Course</h2>
-                <p>Ut sed eros finibus, placerat orci id, dapibus.</p>
-            </div>
+        <div className='explore-course'>
+            <div className='explore-container'>
+                <div>
+                    <h2>Explore Course</h2>
+                    <p className='explore-intro'>Ut sed eros finibus, placerat orci id, dapibus.</p>
+                </div>
 
-            <div>
                 <div>
-                    <div>
-                        <img src={ColorPalette} alt="color palette icon" />
-                        <p>Lorem Ipsum</p>
+                    <div className='lorem-see-all'>
+                        <div className='lorem'>
+                            <img src={ColorPalette} alt="color palette icon" />
+                            <p>Lorem Ipsum</p>
+                        </div>
+                        <a href="#">
+                            SEE ALL
+                            <img src={ArrowForward} alt="forward arrow icon" />
+                        </a>
                     </div>
-                    <a href="#">
-                        SEE ALL
-                        <img src={ArrowForward} alt="forward arrow icon" />
-                    </a>
+                    <img className='course-photo' src={CourseGroup1} alt="first course group" />
                 </div>
-                <img src={CourseGroup1} alt="first course group" width='400'/>
-            </div>
-            <div>
                 <div>
-                    <div>
-                        <img src={Globe} alt="globe Icon" />
-                        <p>Quisque a Consequat</p>
+                    <div className='lorem-see-all'>
+                        <div className='lorem'>
+                            <img src={Globe} alt="globe Icon" />
+                            <p>Quisque a Consequat</p>
+                        </div>
+                        <a href="">
+                            SEE ALL
+                            <img src={ArrowForward} alt="forward arrow icon" />
+                        </a>
                     </div>
-                    <a href="">
-                        SEE ALL
-                        <img src={ArrowForward} alt="forward arrow icon" />
-                    </a>
+                    <img className='course-photo' src={CourseGroup2} alt="second course group" />
                 </div>
-                <img src={CourseGroup2} alt="second course group" width='400'/>
-            </div>
-            <div>
                 <div>
-                    <div>
-                        <img src={Aenean} alt="Aenean icon" />
-                        <p>Aenean Facilisis</p>
+                    <div className='lorem-see-all'>
+                        <div className='lorem'>
+                            <img src={Aenean} alt="Aenean icon" />
+                            <p>Aenean Facilisis</p>
+                        </div>
+                        <a href="">
+                            SEE ALL
+                            <img src={ArrowForward} alt="forward arrow icon" />
+                        </a>
                     </div>
-                    <a href="">
-                        SEE ALL
-                        <img src={ArrowForward} alt="forward arrow icon" />
-                    </a>
+                    <img className='course-photo' src={CourseGroup3} alt="third course group" />
                 </div>
-                <img src={CourseGroup3} alt="third course group" width='400'/>
             </div>
-        </>
+        </div>
     )
 }

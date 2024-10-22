@@ -99,11 +99,13 @@ nav img {
     color: var(--clr-neutral-400);
     font-size: 54px;
     font-weight: bold;
+    margin: 0;
 }
 
 .white-p {
     color: var(--clr-neutral-400);
     font-family: "Nunito Sans", sans-serif;
+    padding: 0;
 }
 
 .hero-section1 div {
@@ -141,7 +143,9 @@ nav img {
 }
 
 .hero-section2 img {
-    height: 100%;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
 }
 
 /*Styling for the MAIN section*/
@@ -486,6 +490,7 @@ nav img {
 
 .assessments {
     margin-left: auto;
+    margin-block: auto;
 }
 
 .assessments h2 {
@@ -508,9 +513,13 @@ nav img {
     width: 550px;
 }
 
-.class-mgt {
+.our-features-group5 {
     display: flex;
     margin-block: 80px;
+}
+
+.class-mgt {
+    margin-block: auto;
 }
 
 .class-mgt h2 {
@@ -535,4 +544,204 @@ nav img {
 
 .class-mgt-img {
     margin-left: auto;
+}
+
+.our-features-group6 {
+    display: flex;
+}
+
+.one-on-one {
+    margin-left: auto;
+    margin-block: auto;
+
+}
+
+.one-on-one h2 {
+    font-size: 40px;
+    line-height: 160%;
+    font-weight: var(--fw-semiBold);
+    color: var(--clr-neutral-700);
+    width: 420px;
+}
+
+.one-on-one h2 span {
+    color: var(--clr-neutral-800);
+}
+
+.one-on-one p {
+    font-size: 22px;
+    color: var(--clr-neutral-900);
+    line-height: 180%;
+    letter-spacing: 2%;
+    width: 540px;
+}
+
+.see-more {
+    display: flex;
+    justify-content: center;
+    margin-block: 40px;
+}
+
+.see-more button {
+    width: 280px;
+    height: 80px;
+    border-radius: 80vw;
+    font-size: 22px;
+    font-weight: var(--fw-medium);
+    border-color: var(--clr-neutral-800);
+    color: var(--clr-neutral-800);
+    background: transparent;
+}
+
+/* styling for explore courses section*/
+
+.explore-course {
+    position: relative;
+}
+
+.explore-course::before {
+    content: "";
+    width: 80%;
+    height: 100%;
+    background-color: #9dccff4f;
+    position: absolute;
+    border-radius: 0 0 80px 0;
+    z-index: -1;
+}
+
+.explore-container {
+    padding-top: 200px;
+    margin-left: 5%;
+}
+
+.explore-container div h2 {
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: var(--fw-bold);
+    opacity: 87%;
+    padding: 0;
+    margin: 0;
+}
+
+.explore-intro {
+    font-size: 24px;
+    font-weight: var(--fw-medium);
+    opacity: 54%;
+    margin-bottom: 60px;
+}
+
+.lorem-see-all {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lorem {
+    display: grid;
+    grid-template-columns: 20px max-content;
+    grid-gap: 20px;
+    grid-template-rows: 40px;
+    margin-bottom: 40px;
+}
+
+.lorem p {
+    margin-block: auto;
+    font-size: 28px;
+    font-family: "Roboto", sans-serif;
+    font-weight: var(--fw-bold);
+    padding: 0;
+}
+
+.lorem-see-all a {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: var(--fw-medium);
+    color: var(--clr-neutral-101);
+    font-size: 24px;
+}
+
+.course-photo {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 80px;
+}
+
+/* styling for testimonial*/
+
+.testimony-container {
+    margin-inline: 5%;
+    display: flex;
+    margin-top: 70px;
+}
+
+.testimony h5 {
+    font-size: 20px;
+    font-weight: var(--fw-regular);
+    letter-spacing: 20%;
+    position: relative;
+    margin-left: 70px;
+    color: var(--clr-neutral-104);
+}
+
+.testimony h5::before {
+    content: "";
+    width: 55px;
+    height: 1px;
+    position: absolute;
+    background-color: var(--clr-neutral-104);
+    left: -70px;
+    bottom: 15px;
+}
+
+.testimony h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 60px;
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-700);
+    padding: 0;
+    margin: 0;
+}
+
+.testimony p {
+    font-size: 26px;
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-900);
+    letter-spacing: 2%;
+}
+
+.testimony a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    padding-inline: 10px 50px;
+    padding-block: 20.8px;
+    font-size: 22px;
+    text-decoration: none;
+    line-height: 160%;
+    color: var(--clr-primary-100);
+    border-top: 1px solid var(--clr-primary-100);
+    border-bottom: 1px solid var(--clr-primary-100);
+    border-left: 1px solid var(--clr-primary-100);
+    border-radius: 80vw 0 0 80vw;
+}
+
+.testimony a img {
+    position: absolute;
+    left: 370px;
+}
+
+.next-testimony {
+    position: relative;
+    left: 550px;
+    bottom: 280px;
+    
+}
+
+.testimony-details {
+    width: 680px;
+    position: relative;
 }

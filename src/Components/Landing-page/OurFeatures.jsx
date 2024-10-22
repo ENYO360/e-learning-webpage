@@ -54,8 +54,8 @@ export default function OurFeatures() {
                     </p>
                 </div>
             </div>
-            <div className="class-mgt">
-                <div>
+            <div className="our-features-group5">
+                <div className='class-mgt'>
                     <h2><span>Class Management</span> Tools for Educators</h2>
                     <p>Class provides tools to help run and manage the class such as Class Roster, Attendance, and more.
                         With the Gradebook, teachers can review and grade tests and quizzes in real-time.
@@ -65,16 +65,18 @@ export default function OurFeatures() {
                     <img src={ClassManagement} alt="group of Teachers" width='650' />
                 </div>
             </div>
-            <div className="one-on-one">
+            <div className="our-features-group6">
                 <div>
-                    <img src={OneOnOne} alt="two teachers" />
+                    <img src={OneOnOne} alt="two teachers" width='650'/>
                 </div>
-                <div>
-                    <h2>One-on-One Discussions</h2>
+                <div className='one-on-one'>
+                    <h2>One-on-One <span>Discussions</span></h2>
                     <p>Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.</p>
                 </div>
             </div>
-            <button>See more features</button>
+            <div className='see-more'>
+                <button>See more features</button>
+            </div>
         </>
     )
 }

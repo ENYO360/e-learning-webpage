@@ -55,12 +55,6 @@ export default function Main() {
                     <WhatIsTOTC />
                     <OurFeatures />
                 </div>
-                <div className='main-section3'>
-                    <ExplorCourses />
-                    <Testimonial />
-                    <LatestNews />
-                    <Footer />
-                </div>
             </div>
         </>
     )
