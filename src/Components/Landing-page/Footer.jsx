@@ -20,8 +20,8 @@ export default function Footer() {
                     <div>
                         <ul className='footer-nav'>
                             <li><a href="#">Careers</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
+                            <li className='privacy'><a href="#">Privacy Policy</a></li>
+                            <li className='terms'><a href="#">Terms & Conditions</a></li>
                         </ul>
                     </div>
                     <p>© 2021 Class Technologies Inc.</p>

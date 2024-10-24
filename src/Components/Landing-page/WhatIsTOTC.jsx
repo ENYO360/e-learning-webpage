@@ -37,7 +37,7 @@ export default function WhatIsTOTC() {
                     <a href="#">Learn more</a>
                 </div>
                 <div>
-                    <img src={YouCan} alt="Students attending lectures" width='650'/>
+                    <img src={YouCan} alt="Students attending lectures" width='650' />
                 </div>
                 </div>
             </div>

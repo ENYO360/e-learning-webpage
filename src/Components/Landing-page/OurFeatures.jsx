@@ -39,7 +39,7 @@ export default function OurFeatures() {
                         Teachers can handout assignments in real-time for students to complete and submit.
                     </p>
                 </div>
-                <div>
+                <div className='tools-img'>
                     <img src={ToolsForTeachers} alt="Student's picture" />
                 </div>
             </div>

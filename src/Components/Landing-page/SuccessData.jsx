@@ -3,23 +3,23 @@ import EasyScheduling from '../../Images/landing-page/easy-scheduling-icon.png'
 import CustomerTracking from '../../Images/landing-page/customer-tracking-icon.png'
 
 export const SuccessData = [
-    {rate: '15k+',
+    {   rate: '15k+',
         description: 'Students'
     },
 
-    {rate: '75%',
+    {   rate: '75%',
         description: 'Total success'
     },
 
-    {rate: '35',
+    {   rate: '35',
         description: 'Main questions'
     },
 
-    {rate: '26',
+    {   rate: '26',
         description: 'Chief experts'
     },
 
-    {rate: '16',
+    {   rate: '16',
         description: 'Years of experience'
     },
 ]
