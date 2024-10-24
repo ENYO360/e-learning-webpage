@@ -19,20 +19,22 @@ export default function Testimonial() {
                     <img src={ForwardIcon} alt="forward Icon" />
                 </a>
             </div>
-            <div>
-                <img src={ForwardIcon2} alt="Forward Icon" className='next-testimony'/>
+            <div className='testifier-container'>
+                <img src={ForwardIcon2} alt="Forward Icon" className='next-testimony' />
                 {TESTIFIERDATA.map((item) =>
                     <>
-                        <img src={item.image} alt="" width='500'/>
+                        <img src={item.image} alt="" width='500' />
                         <div className='testimony-details'>
-                            <p>{item.testimony}</p>
-                            <p>{item.testifier}</p>
-                            <div>
-                                <p>{item.noOfReviews}</p>
-                                <img src={item.rating} alt="rating stars" />
+                            <p className='what-they-say'>{item.testimony}</p>
+                            <div className='review-details'>
+                                <p className='testifier-name'>{item.testifier}</p>
+                                <div>
+                                    <img src={item.rating} alt="rating stars" />
+                                    <p>{item.noOfReviews}</p>
+                                </div>
                             </div>
                         </div>
-                    </> 
+                    </>
                 )}
             </div>
         </div>

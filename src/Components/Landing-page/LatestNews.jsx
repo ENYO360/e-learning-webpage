@@ -6,34 +6,33 @@ import { LATESTNEWSARRAY } from './LatestNewsData'
 export default function LatestNews() {
     return (
         <>
-            <div>
+            <div className='latest-news-container'>
                 <div>
                     <h3>Lastest News and Resources</h3>
-                    <p>See the developments that have occurred to TOTC in the world</p>
+                    <p className='see'>See the developments that have occurred to TOTC in the world</p>
                 </div>
-                <div>
+                <div className='news-container'>
                     <div>
                         <img src={NewsCard1} alt="News card1" />
-                        <h4>NEWS</h4>
-                        <p>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
+                        <h4 className='first-news'>NEWS</h4>
+                        <h4 className='class-adds'>Class adds $30 million to its balance sheet for<br /> a Zoom-friendly edtech solution</h4>
+                        <p className='class-launched'>Class, launched less than a year ago by Blackboard<br /> co-founder Michael Chasen, integrates exclusively...</p>
                         <a href="#">Read more</a>
                     </div>
                     <div>
-                        <div>
                             {
                             LATESTNEWSARRAY.map((item) =>
-                                <>
-                                    <div>
+                                <div className='news-list'>
+                                    <div className='news-media'>
                                         <img src={item.image} alt="news image" />
-                                        <h4>{item.newsTag}</h4>
+                                        <h5>{item.newsTag}</h5>
                                     </div>
-                                    <div>
+                                    <div className='news-text'>
                                         <h4>{item.headline}</h4>
                                         <p>{item.details}</p>
                                     </div>
-                                </>
+                                </div>
                             )}
-                        </div>
                     </div>
                 </div>
             </div>
