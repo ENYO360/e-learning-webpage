@@ -27,6 +27,7 @@
   --clr-accent-200: #717FB0;
 
   /*Font Weight variables for font-family: POPPINS*/
+  --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semiBold: 600;

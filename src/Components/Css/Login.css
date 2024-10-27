@@ -32,6 +32,10 @@
     height: 700px;
 }
 
+.login-form-wrap {
+    margin-block: auto;
+}
+
 .welcome h3 {
     font-weight: var(--fw-regular);
     font-size: 16px;
@@ -50,7 +54,7 @@
     margin-block: 20px 50px;
 }
 
-.no-login-selected {
+.no-sign-up-selected {
     width: 146px;
     padding-block: 15px;
     border: none;
@@ -59,7 +63,7 @@
     color: var(--clr-neutral-400);
 }
 
-.sign-up-btn {
+.login-btn {
     width: 146px;
     padding-block: 15px;
     border-radius: 33vw;
@@ -68,7 +72,7 @@
     color: var(--clr-neutral-400);
 }
 
-.sign-up-btn:hover {
+.login-btn:hover {
     background-color: #49bbbdce;
     cursor: pointer;
 }
@@ -100,18 +104,16 @@ label input::placeholder {
     color: #acacac;
 }
 
-.register-btn {
-    width: 232px;
-    padding-block: 15px;
-    border-radius: 36vw;
-    background-color: #49bbbd;
-    border: none;
-    color: var(--clr-neutral-400);
-    margin-left: auto;
-    margin-top: 20px;
+.check-me {
+    display: flex;
+    justify-content: space-between;
+    font-weight: var(--fw-light);
+    font-size: 12px;
 }
 
-.register-btn:hover {
-    background-color: #49bbbdce;
-    cursor: pointer;
+.forgot {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: var(--fw-light);
+    color: #000000;
 }

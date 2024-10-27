@@ -3,6 +3,7 @@ import { React, useState } from 'react'
 import Logo from './Images/landing-page/site-logo.png'
 import SignUp from './Components/Login-SignUp/SignUp'
 import Home from './Components/Landing-page/Home'
+import Login from './Components/Login-SignUp/Login'
 
 export default function App() {
 
@@ -12,6 +13,7 @@ export default function App() {
                 <Routes>
                     <Route path='/signup' element={<SignUp />} />
                     <Route path='/' element={<Home />} />
+                    <Route path='/login' element={<Login />} />
                 </Routes>
             </Router>
         </>

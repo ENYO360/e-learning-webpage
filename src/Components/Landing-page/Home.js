@@ -24,7 +24,7 @@ function Home() {
                 <li><Link className='link' to="/">About Us</Link></li>
               </ul>
               <div className="nav-buttons">
-                <a href="#"><button className='login'>Login</button></a>
+                <Link to="/login"><button className='login'>Login</button></Link>
                 <Link to="/signup"><button className='sign-up'>Sign Up</button></Link>
               </div>
             </div>
