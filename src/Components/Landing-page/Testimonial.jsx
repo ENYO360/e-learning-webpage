@@ -23,7 +23,7 @@ export default function Testimonial() {
                 <img src={ForwardIcon2} alt="Forward Icon" className='next-testimony' />
                 {TESTIFIERDATA.map((item) =>
                     <>
-                        <img src={item.image} alt="" width='500' />
+                        <img className='testifier-img' src={item.image} alt="" width='500' />
                         <div className='testimony-details'>
                             <p className='what-they-say'>{item.testimony}</p>
                             <div className='review-details'>

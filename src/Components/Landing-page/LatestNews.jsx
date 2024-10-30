@@ -13,7 +13,7 @@ export default function LatestNews() {
                 </div>
                 <div className='news-container'>
                     <div>
-                        <img src={NewsCard1} alt="News card1" />
+                        <img className='news-card1' src={NewsCard1} alt="News card1" />
                         <h4 className='first-news'>NEWS</h4>
                         <h4 className='class-adds'>Class adds $30 million to its balance sheet for<br /> a Zoom-friendly edtech solution</h4>
                         <p className='class-launched'>Class, launched less than a year ago by Blackboard<br /> co-founder Michael Chasen, integrates exclusively...</p>

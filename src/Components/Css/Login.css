@@ -94,6 +94,7 @@ label {
     display: grid;
     gap: 10px;
 }
+
 label input {
     padding: 20px;
     border-color: #49bbbd;

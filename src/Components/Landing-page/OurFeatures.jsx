@@ -73,9 +73,9 @@ export default function OurFeatures() {
                     <h2>One-on-One <span>Discussions</span></h2>
                     <p>Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.</p>
                 </div>
-            </div>
-            <div className='see-more'>
-                <button>See more features</button>
+                <div className='see-more'>
+                    <button>See more features</button>
+                </div>
             </div>
         </>
     )
