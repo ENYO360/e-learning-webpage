@@ -1,3 +1,4 @@
+
 .sign-up-wrapper {
     display: flex;
     justify-content: space-between;
@@ -5,8 +6,25 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* MEDIA QUERY FOR MOBILE VIEW*/
+
+@media all and (max-width: 1000px) {
+    .sign-up-wrapper div {
+        margin-inline: auto;
+        margin-top: 70px;
+    }
+}
+
 .sign-up-img-wrap {
     position: relative;
+}
+
+/* MEDIA QUERY FOR MOBILE VIEW*/
+
+@media all and (max-width: 1000px) {
+    .sign-up-img-wrap {
+        display: none;
+    }
 }
 
 .sign-up-img-wrap h2 {
@@ -54,6 +72,15 @@
     margin-block: 20px 50px;
 }
 
+/* MEDIA QUERY FOR MOBILE VIEW*/
+
+@media all and (max-width: 1000px) {
+    .welcome div {
+        padding-block: 10px;
+        padding-inline: 10px;
+    }   
+}
+
 .no-sign-up-selected {
     width: 146px;
     padding-block: 15px;
@@ -63,6 +90,14 @@
     color: var(--clr-neutral-400);
 }
 
+/* MEDIA QUERY FOR MOBILE VIEW*/
+
+@media all and (max-width: 1000px) {
+    .no-sign-up-selected {
+        width: 139px;
+    }   
+}
+
 .login-btn {
     width: 146px;
     padding-block: 15px;
@@ -70,6 +105,14 @@
     background-color: #49bbbd;
     border: none;
     color: var(--clr-neutral-400);
+}
+
+/* MEDIA QUERY FOR MOBILE VIEW*/
+
+@media all and (max-width: 1000px) {
+    .login-btn {
+        width: 139px;
+    }   
 }
 
 .login-btn:hover {
@@ -83,11 +126,27 @@
     margin-inline: 50px 50px;
 }
 
+/* MEDIA QUERY FOR MOBILE VIEW*/
+
+@media all and (max-width: 1000px) {
+    .welcome p {
+        margin-inline: 20px;
+    }
+}
+
 .sign-up-form {
     display: grid;
     gap: 30px;
     margin-inline: 50px;
     margin-top: 40px;
+}
+
+/* MEDIA QUERY FOR MOBILE VIEW*/
+
+@media all and (max-width: 1000px) {
+    .sign-up-form {
+        margin-inline: 20px;
+    }
 }
 
 label {
@@ -101,6 +160,14 @@ label input {
     border-radius: 40vw;
 }
 
+/* MEDIA QUERY FOR MOBILE VIEW*/
+
+@media all and (max-width: 1000px) {
+    label input {
+        padding: 18px;
+    }
+}
+
 label input::placeholder {
     color: #acacac;
 }
@@ -110,6 +177,18 @@ label input::placeholder {
     justify-content: space-between;
     font-weight: var(--fw-light);
     font-size: 12px;
+}
+
+/* MEDIA QUERY FOR MOBILE VIEW*/
+
+@media all and (max-width: 1000px) {
+    .check-me {
+
+    }
+
+    .check {
+        
+    }
 }
 
 .forgot {

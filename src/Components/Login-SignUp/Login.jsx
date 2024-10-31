@@ -32,7 +32,7 @@ export default function SignUp() {
                         </label>
                         <label htmlFor="checkbox" className='check-me'>
                             <div>
-                                <input type="checkbox" name='checkbox' />
+                                <input type="checkbox" className='check' name='checkbox' />
                                 Remember me
                             </div>
                             <Link className='forgot'>Forgot Password?</Link>
