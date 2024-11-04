@@ -5,6 +5,12 @@
     overflow: hidden;
 }
 
+/* MEDIA QUERY FOR MOBILE VIEW*/
+
+@media all and (max-width: 1000px) {
+
+}
+
 .nav-wrapper {
     background-color: var(--clr-primary-100);
     border: 1px solid var(--clr-primary-100);
@@ -17,8 +23,63 @@ nav {
     padding-top: 1%;
 }
 
-nav img {
-    width: 80px;
+/* MEDIA QUERY FOR MOBILE VIEW*/
+
+@media all and (max-width: 1000px) {
+    nav {
+        position: relative;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE VIEW*/
+
+@media all and (max-width: 1000px) {
+    .site-logo {
+        width: 70px;
+        margin-top: 10px;
+    }
+}
+
+#hamburger, #toggle-close {
+    display: none;
+    width: max-content;
+    height: max-content;
+    background: none;
+    border: none;
+}
+
+@media all and (max-width: 500px) {
+    #hamburger, #toggle-close {
+        left: 78%;
+    }
+}
+
+#hamburger:hover {
+    cursor: pointer;
+}
+
+#toggle-close:hover {
+    cursor: pointer;
+}
+
+/* MEDIA QUERY FOR MOBILE VIEW*/
+
+@media all and (max-width: 1000px) {
+    #hamburger {
+        display: block;
+        position: fixed;
+        z-index: 999;
+        right: 5%;
+        top: 20px;
+    }
+
+    #toggle-close {
+        display: block;
+        position: fixed;
+        z-index: 999;
+        right: 5%;
+        top: 20px;
+    }
 }
 
 .nav-links {
@@ -30,7 +91,14 @@ nav img {
 
 @media all and (max-width: 1000px) {
     .nav-links {
-        display: none;
+        display: grid;
+        background-color: var(--clr-neutral-400);
+        position: fixed;
+        right: 0%;
+        top: 0%;
+        height: 100%;
+        z-index: 1;
+        box-shadow: 1px 1px 100px 100px rgba(21, 21, 21, 0.367);
     }
 }
 
@@ -44,12 +112,24 @@ nav img {
     padding: 0;
 }
 
+/*Media Query for Tab View*/
+
 @media all and (max-width: 1200px) {
    .nav-links ul {
     margin-right: 20px;
     width: 400px;
    }
-}  
+}
+
+/* MEDIA QUERY FOR MOBILE VIEW*/
+
+@media all and (max-width: 1000px) {
+    .nav-links ul {
+        display: grid;
+        width: 100%;
+        margin: 150px 30px 30px 30px;
+    }
+}
 
 .nav-links ul li .link {
     text-decoration: none;
@@ -58,9 +138,29 @@ nav img {
     white-space: nowrap;
 }
 
-.nav-links ul li a:hover {
+/* MEDIA QUERY FOR MOBILE VIEW*/
+
+@media all and (max-width: 1000px) {
+    .nav-links ul li {
+        padding-block: 20px;
+    }
+    
+    .nav-links ul li .link {
+        color: var(--clr-neutral-300);
+    }
+}
+
+.nav-links ul li .link:hover {
     color: var(--clr-neutral-100);
     transition: 300ms ease-in;
+}
+
+/* MEDIA QUERY FOR MOBILE VIEW*/
+
+@media all and (max-width: 1000px) {
+    .nav-links ul li .link:hover {
+        color: var(--clr-primary-100);
+    }
 }
 
 .nav-buttons {
@@ -68,6 +168,15 @@ nav img {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+}
+
+/* MEDIA QUERY FOR MOBILE VIEW*/
+
+@media all and (max-width: 1000px) {
+    .nav-buttons {
+        margin-bottom: 50px;
+        margin-inline: 30px;
+    }
 }
 
 .nav-buttons button {
@@ -104,6 +213,14 @@ nav img {
     font-weight: 600;
 }
 
+/* MEDIA QUERY FOR MOBILE VIEW*/
+
+@media all and (max-width: 1000px) {
+    .sign-up {
+        background-color: var(--clr-primary-100);
+    }
+}
+
 .sign-up:hover {
     border: 2px solid rgb(63, 62, 62);
     cursor: pointer;
@@ -125,7 +242,7 @@ nav img {
 } 
 
 .hero-section1 {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .yellow-text {
@@ -1112,7 +1229,7 @@ nav img {
 @media all and (max-width: 1000px) {
     .our-features-group6 {
         display: grid;
-        margin-block: 100px;
+        margin-block: 100px 10px;
     }
 }
 
@@ -1187,6 +1304,7 @@ nav img {
 @media all and (max-width: 1000px) {
     .see-more {
         margin-block: 0;
+        align-items: center;
     }
 }
 
@@ -1208,6 +1326,7 @@ nav img {
         width: 220px;
         height: 55px;
         font-size: 19px;
+        margin-bottom: 30px;
     }   
 }
 
@@ -1477,10 +1596,11 @@ nav img {
 @media all and (max-width: 1000px) {
     .testimony a {
         margin-inline: auto;
-        font-size: 18px;
+        font-size: 16px;
         width: 200px;
-        padding-block: 17px;
+        padding-block: 10px;
         position: relative;
+        margin-block: 30px 60px;
     }
 }
 
@@ -1494,7 +1614,7 @@ nav img {
 @media all and (max-width: 1000px) {
     .testimony a img {
         left: 230px;
-        width: 65px;
+        width: 47.5px;
     }
 }
 
