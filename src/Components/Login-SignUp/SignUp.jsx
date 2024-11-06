@@ -1,6 +1,7 @@
 import { React, useState } from 'react';
-import { db } from '../../firebase';
+import { db, auth } from '../../firebase';
 import { collection, addDoc } from 'firebase/firestore';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { BrowseRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Student1 from '../../Images/signUp-logIn/pupil-raising-hand-1.png';
 import '../Css/SignUp.css';
@@ -49,6 +50,20 @@ export default function SignUp() {
         } catch (err) {
             console.error('Error submitting form: ', err);
             setError('There was an error submitting the form.');
+        }
+
+        try {
+            // Register the user with Firebase Authentication
+            await createUserWithEmailAndPassword(auth, email, password);
+            alert('Registration successful!');
+        } catch (err) {
+            if (err.code === 'auth/email-already-in-use') {
+                setError('Email already in use');
+            } else if (err.code === 'auth/weak-password') {
+                setError('Password should be at least 6 characters');
+            } else {
+                setError('Failed to register. Please try again.');
+            }
         }
     };
 

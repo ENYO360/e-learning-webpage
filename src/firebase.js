@@ -5,7 +5,7 @@ import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
     apiKey: "AIzaSyA4LhG5s8bntqgUyKNpjMdNrDmvMKu7cSM",
-    authDomain: "e-learning-webpage.firebaseapp.com",
+    authDomain: "e-learning-webpage-by-enyo.web.app",
     projectId: "e-learning-webpage",
     storageBucket: "e-learning-webpage.firebasestorage.app",
     messagingSenderId: "1015263955254",

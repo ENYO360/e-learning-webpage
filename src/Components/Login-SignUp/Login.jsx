@@ -14,7 +14,7 @@ export default function SignUp() {
         // Validate username and password
         const validateForm = () => {
             if (!email || !password) {
-                setError('All fields are required');
+                setError("All fields are required")
                 return false;
             }
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -41,6 +41,7 @@ export default function SignUp() {
             await signInWithEmailAndPassword(auth, email, password);
             setLoading(false);
             alert('Login successful!');
+            console.log("login successfuly");
         } catch (err) {
             setLoading(false);
             if (err.code === 'auth/user-not-found') {
@@ -71,7 +72,7 @@ export default function SignUp() {
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                     {error && <p style={{ color: 'red' }}>{error}</p>}
-                    <form onChange={handleSubmit} className='sign-up-form'>
+                    <form onSubmit={handleSubmit} className='sign-up-form'>
                         <label htmlFor="email">
                             Email
                             <input
@@ -100,7 +101,7 @@ export default function SignUp() {
                             </div>
                             <Link className='forgot'>Forgot Password?</Link>
                         </label>
-                        <button className='register-btn'>{loading ? 'Logging in...' : 'Login'}</button>
+                        <button className='register-btn' disabled={loading}>{loading ? 'Logging in...' : 'Login'}</button>
                     </form>
                 </div>
             </div>
