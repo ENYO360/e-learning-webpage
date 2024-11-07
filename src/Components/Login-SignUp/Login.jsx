@@ -3,6 +3,7 @@ import { db, auth } from '../../firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { BrowseRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Student1 from '../../Images/signUp-logIn/pupil-raising-hand.png';
+import UserDetails from '../Dashboard/UserDetails';
 import '../Css/Login.css'
 
 export default function SignUp() {
@@ -10,11 +11,12 @@ export default function SignUp() {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
+    const [showDashboard, setShowDashboard] = useState(false);
 
         // Validate username and password
         const validateForm = () => {
             if (!email || !password) {
-                setError("All fields are required")
+                setError("All fields are required");
                 return false;
             }
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -40,10 +42,11 @@ export default function SignUp() {
             // Firebase Authentication
             await signInWithEmailAndPassword(auth, email, password);
             setLoading(false);
+           // setShowDashboard(true);
             alert('Login successful!');
-            console.log("login successfuly");
         } catch (err) {
             setLoading(false);
+            console.error('Firebase login error:', err);
             if (err.code === 'auth/user-not-found') {
                 setError('No user found with this email');
             } else if (err.code === 'auth/wrong-password') {

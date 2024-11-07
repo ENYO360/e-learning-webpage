@@ -100,10 +100,10 @@ export default function SignUp() {
                         </label>
                         <label htmlFor="username">
                             User name
-                            <input 
+                            <input
                                 type="text"
                                 value={username}
-                                name='username' 
+                                name='username'
                                 placeholder='Enter your User name'
                                 onChange={(e) => setUsername(e.target.value)}
                             />
@@ -113,7 +113,7 @@ export default function SignUp() {
                             <input 
                                 type="password"
                                 value={password}
-                                name='password' 
+                                name='password'
                                 placeholder='Enter your Password'
                                 onChange={(e) => setPassword(e.target.value)}
                             />
