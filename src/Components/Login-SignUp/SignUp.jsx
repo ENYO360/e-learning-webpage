@@ -2,7 +2,7 @@ import { React, useState } from 'react';
 import { db, auth } from '../../firebase';
 import { collection, addDoc } from 'firebase/firestore';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { BrowseRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Student1 from '../../Images/signUp-logIn/pupil-raising-hand-1.png';
 import '../Css/SignUp.css';
 
@@ -121,6 +121,9 @@ export default function SignUp() {
                         <button className='register-btn'>Register</button>
                     </form>
                 </div>
+            </div>
+            <div>
+                <h2>Hey {username}! Welcome on board.</h2>
             </div>
         </>
     )

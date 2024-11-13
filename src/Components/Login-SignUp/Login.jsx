@@ -1,7 +1,7 @@
 import { React, useState} from 'react';
 import { db, auth } from '../../firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { BrowseRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 import Student1 from '../../Images/signUp-logIn/pupil-raising-hand.png';
 import UserDetails from '../Dashboard/UserDetails';
 import '../Css/Login.css'
@@ -42,8 +42,7 @@ export default function SignUp() {
             // Firebase Authentication
             await signInWithEmailAndPassword(auth, email, password);
             setLoading(false);
-           // setShowDashboard(true);
-            alert('Login successful!');
+           setShowDashboard(true);
         } catch (err) {
             setLoading(false);
             console.error('Firebase login error:', err);

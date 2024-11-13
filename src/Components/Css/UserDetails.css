@@ -1,0 +1,23 @@
+.dashboard-wrapper {
+    width: 50%;
+    margin-inline: auto;
+    margin-block: 30%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 60px 15px rgba(214, 208, 208, 0.479);
+}
+
+
+.dashboard-wrapper button {
+    width: 232px;
+    padding-block: 15px;
+    border-radius: 36vw;
+    background-color: #49bbbd;
+    border: none;
+    color: var(--clr-neutral-400);
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}

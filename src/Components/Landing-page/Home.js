@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from 'react';
-import { BrowseRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Hero from '../Landing-page/Hero'
 import Main from '../Landing-page/Main';
 import Main1 from '../Landing-page/Main1';
